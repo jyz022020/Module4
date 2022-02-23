@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+#history {
+    float: left;
+}
+
+#timeleft {
+    float: right;
+}
+
+#maincontent {
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#welcomepage {
+    /* display:none; */
+}
+
+#quizpage{
+    /* display: none; */
+}
+#signuppage {
+    /* display: none; */
+}
+#historypage {
+    /* display: none; */
+
+}
+
+

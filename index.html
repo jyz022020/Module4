@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+        <button id="history">View Highest Score</button>
+        <div id="timeleft">Time left: 0</div></div>
+    </header>
+    <div id= "maincontent">
+        <div id= "welcomepage">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions whin the time limit. Keep in mind that the incorrect answers will penalize your time/score by ten seconds.</p>
+            <button id="start" class="btn">Start</button>
+        </div>
+        <div id="quizpage">
+        </div>
+        <div id ="signuppage">
+            <h1>All done!</h1>
+            <p id = "finalscore"></p>
+            <p>Enter initials: </p>
+            <input type="text" id ="initials" placeholder="">
+            <button id="submit" class="btn">Submit</button>
+            
+
+            
+        </div>
+        <div id ="highscorepage">
+            <h1>Highscores</h1>
+            <div id = "historyscores"/>
+            <button id="goback" class="btn">Go back</button>
+            <button id="clearhighcores" class="btn">Clear Highscores</button>
+        </div>
+
+    </div>
+    
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
