@@ -41,9 +41,19 @@ body {
 #signuppage {
     /* display: none; */
 }
-#historypage {
+#highscorepage {
     /* display: none; */
 
 }
+
+.result {
+    border-top: 1px solid grey;
+    margin-top: 5px;
+    padding-top: 5px;
+    display: none;
+}
+
+
+
 
 
