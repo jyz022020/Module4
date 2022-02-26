@@ -26,24 +26,36 @@ body {
 }
 
 #maincontent {
-    text-align: center;
+    text-align: left;
     padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 #welcomepage {
-    /* display:none; */
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 #quizpage{
-    /* display: none; */
+    display: none;
 }
 #signuppage {
-    /* display: none; */
+    display: none;
 }
 #highscorepage {
-    /* display: none; */
+    display: none;
 
+}
+
+button {
+    background-color: purple;
+    color: white;
+}
+
+#historyScores {
+    background-color: lavenderblush;
 }
 
 .result {
@@ -53,7 +65,13 @@ body {
     display: none;
 }
 
+#history {
+    color: purple;
+}
 
+.option {
+    margin: 5px;
+}
 
 
 

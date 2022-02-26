@@ -4,6 +4,7 @@ var optionEls = document.getElementsByClassName("option");
 var submitButton = document.getElementById("submit");
 var gobackEl = document.getElementById("goback");
 var clearEl = document.getElementById("clearhighcores");
+var historyEl = document.getElementById("history");
 var quizIndex = 0;
 var CORRECT = "Correct!";
 var WRONG = "Wrong";
@@ -11,12 +12,12 @@ var timeLeft;
 var timeInterval;
 
 
-var questions = ["question1", "question2", "question3", "question4", "question5"];
-var answerA = ["question1A", "question2A", "question3A", "question4A", "question5A"];
-var answerB = ["question1b", "question2b", "question3b", "question4b", "question5b"];
-var answerC = ["question1c", "question2c", "question3c", "question4c", "question5c"];
-var answerD = ["question1d", "question2d", "question3d", "question4c", "question5d"];
-var correctAnswer = ["A", "B", "C", "D", "A"];
+var questions = ["1.There are ___ levels of heading in HTML?", "2.Which of the following tags do not require a terminator?", "3.Which we use to get the ordered list?", "4.For a particular font its size attribute can be an absolute value ranging form?", "5.Which one of the following tags is used to insert graphics in the webpage?"];
+var answerA = ["One", "<u>", "<h1>", "1-7", "<img>"];
+var answerB = ["Three", "<br>", "<ul>", "B.1-9", "<image>"];
+var answerC = ["Six", "<b>", "<ol>", "1-8", "<images>"];
+var answerD = ["Ten", "none fo the above", "<ml>", "1-10", "<picture>"];
+var correctAnswer = ["C", "B", "C", "D", "A"];
 
 startEl.addEventListener("click", function(){
     timeLeft = 75;
@@ -34,6 +35,7 @@ startEl.addEventListener("click", function(){
     }, 1000);
     initializeQuizQuestion(quizIndex);
 });
+
 for (var i=0; i<optionEls.length; i++) {
     optionEls[i].addEventListener("click", function(event) {
         var selection = event.target.value;
@@ -94,13 +96,20 @@ function initializeSignupPage (){
     setTimeout(() => {
         clearInterval(timeInterval);
       }, 1000)
+    document.getElementById("initials").value= "";
     document.getElementById("signuppage").style.display = "block";
     document.getElementById("finalscore").textContent= "Your final score is " + timeLeft;
+
 }
 
 submitButton.addEventListener("click", function(){
     var name = document.getElementById("initials").value;
-    initializeHighscorePage(name);
+    if (name === "") {
+        alert("Please input your initial to proceed");
+    } else {
+        initializeHighscorePage(name);
+    }
+    
 })
 
 function initializeHighscorePage(name){
@@ -127,6 +136,10 @@ gobackEl.addEventListener("click",function(){
 
 clearEl.addEventListener("click",function(){
     document.getElementById("historyScores").innerHTML = "";
+});
+
+historyEl.addEventListener("click", function(){
+    initializeHighscorePage();
 });
 
 

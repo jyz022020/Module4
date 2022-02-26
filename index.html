@@ -4,33 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
+    <title>Codeing Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
-        <button id="history">View Highest Score</button>
+        <div id="history">View Highest Score</div>
         <div id="timeleft">Time left: 0</div></div>
     </header>
+    <div id= "welcomepage">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions whin the time limit. Keep in mind that the incorrect answers will penalize your time/score by ten seconds.</p>
+        <button id="start" class="btn">Start</button>
+    </div>
     <div id= "maincontent">
-        <div id= "welcomepage">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions whin the time limit. Keep in mind that the incorrect answers will penalize your time/score by ten seconds.</p>
-            <button id="start" class="btn">Start</button>
-        </div>
         <div id="quizpage">
             <h1 id = "question"></h1>
-            <div class="option">
-                <button id="answerA" value="A"></button>
+            <div>
+                <button id="answerA" class="option" value="A"></button>
             </div>
-            <div class="option">
-                <button id="answerB" value="B"></button>
+            <div>
+                <button id="answerB"  class="option" value="B"></button>
             </div>
-            <div class="option">
-                <button id="answerC" value="C"></button>
+            <div>
+                <button id="answerC"  class="option" value="C"></button>
             </div>
-            <div class="option">
-                <button id="answerD" value="D"></button>
+            <div>
+                <button id="answerD"  class="option" value="D"></button>
             </div>
             <div id="result" class="result"></div>
         </div>
